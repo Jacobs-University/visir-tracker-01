@@ -13,6 +13,8 @@ Please put your name here:
 
 For me both of them show a frame rate of 30 FPS, because my camera is a 30 FPS camera. This means that there seems to be no lags in the program code. 
 
+![image](framerate1.png)
+
 ### Note
 MacOS users may need to launch the application with the administrator rights, to grant access to the web-camera.
 
@@ -24,7 +26,11 @@ MacOS users may need to launch the application with the administrator rights, to
 ### Note
 Please do not copy-paste the example code from the OpenCV documentation, but try to understand the example code and implement the solution to the problem by yourself.
 
+![image](face.png)
+
 The FPS is now much lower. Perhaps due to the overhead involved in the calculations and implementations of the Haar cascades. Also noticed that the FPS is a bit higher (10-12 FPS) when there is no face on the screen, as compared to when there is a face on the screen (6-8 FPS). This maybe has to do with the extra calculations of Haar cascades on the eyes on each face.
+
+![image](framerate2.png)
 
 ## Submission
 Please submit the assignment by making a pull request.
