@@ -11,11 +11,11 @@ Please put your name here:
 3. Check that the code is running correctly: it should show the video stream from the web-camera of your laptop.
 4. Calculate average fps and print it to console every 2 seconds. Compare Debug and Release versions.
 
- <li>   Without face detection the fps goes upto 30fps both in debug mode and release mode. It was alos noted that fps 
+<ul><li>   Without face detection the fps goes upto 30fps both in debug mode and release mode. It was alos noted that fps 
 reaches to 30 quicker than debug mode.</li>
 
 <li>Release is faster than debug because Debug includes debug information in the compiled files (allowing easy debugging)
-while Release usually has optimizations enabled.</li>
+while Release usually has optimizations enabled.</li></ul>
 
 ### Note
 MacOS users may need to launch the application with the administrator rights, to grant access to the web-camera.
@@ -26,7 +26,7 @@ MacOS users may need to launch the application with the administrator rights, to
 2. Implement face detection for the video stream from the web-camera using the ```cv::CascadeClassifier``` class.
 3. Measure the FPS one more time. How FPS changed after incorporating the face detection into the framework?
 
-<liWith face detection fps goes upto 4 fps in 10 secs in debug mode which is very slow and in release mode goes upto 22fps within 10 secs.</li>
+<ul><li>With face detection fps goes upto 4 fps in 10 secs in debug mode which is very slow and in release mode goes upto 22fps within 10 secs.</li></ul>
 
 
 ### Note
