@@ -2,7 +2,7 @@
 **Dealine**: 26.02.2021
 
 Please put your name here:  
-**Name:** .......
+**Name:** Yonatan Mamo
 ## Problem 1.1
 ### Calculate Frames-per-Second (FPS) (Points 30)
 1. Fork the current repository
@@ -11,9 +11,9 @@ Please put your name here:
 3. Check that the code is running correctly: it should show the video stream from the web-camera of your laptop.
 4. Calculate average fps and print it to console every 2 seconds. Compare Debug and Release versions.
 	- average fps for debug and release versions is very similar.
-	- release:
+	- release:<br />
 	![interface](release.PNG) 
-	- debug:
+	- debug:<br />
 	![interface](debug.PNG) 
 	
 ### Note
@@ -26,7 +26,7 @@ MacOS users may need to launch the application with the administrator rights, to
 3. Measure the FPS one more time. How FPS changed after incorporating the face detection into the framework?
 	- the FPS is significantly lower after incorporating the face detection. The difference between debug and release version becomes more obvious now. 
 	The debug version FPS drops to 1 and the release version drops to around 4 FPS.
-	-release fps:
+	-release fps:<br />
 	![interface](detectionfps.PNG) 
 	
 	 
