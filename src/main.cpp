@@ -22,11 +22,11 @@ int main(){
         return 1;
     };
     
-    int num_frames = 0;
+    int frames_num = 0;
     time_t start=NULL, end=NULL;
     
     time(&start);
-    for(;; num_frames++){
+    for(;; frames_num++){
         Mat img;
         camera >> img;
         
@@ -45,20 +45,19 @@ int main(){
                      Point(cvRound((area.x + area.width - 1) * scale), cvRound((area.y + area.height - 1) * scale)), drawColor);
         }
         
-        //double currentTime = difftime(end, start);
-        if(difftime(end, start) >= 2)//check if 2 second passed
+        if(difftime(end, start) >= 2)//check if 2 seconds passed
                 {
                     // Time elapsed
-                    double seconds = difftime(end, start);
-                    std::cout << "Time taken : " << seconds << " seconds" << std::endl;
+                    double sec = difftime(end, start);
+                    std::cout << "Elapsed time: " << sec << " sec" << std::endl;
         
-                    // Calculate frames per second
-                    double fps = num_frames / seconds;
-                    std::cout << "Estimated frames per second : " << fps << std::endl;
+                    // Measure frames per second
+                    double framespersec = frames_num / sec;
+                    std::cout << "frames per second: " << framespersec << std::endl;
         
                     //Reset the timer and frames.
                     time(&start);
-                    num_frames = 0;
+                    frames_num = 0;
                 }
         
         imshow("Camera", img);
