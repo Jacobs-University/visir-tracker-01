@@ -26,7 +26,7 @@ MacOS users may need to launch the application with the administrator rights, to
 3. Measure the FPS one more time. How FPS changed after incorporating the face detection into the framework?
 	- the FPS is significantly lower after incorporating the face detection. The difference between debug and release version becomes more obvious now. 
 	The debug version FPS drops to 1 and the release version drops to around 4 FPS.
-	-release fps:<br />
+	- release fps:<br />
 	![interface](detectionfps.PNG) 
 	
 	 
