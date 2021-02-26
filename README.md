@@ -1,17 +1,20 @@
 # Practical Assignment 1
 **Dealine**: 26.02.2021
 
-Please put your name here:  
-**Name:** .......
+Please put your names here:  
+**Name:** Alex Tretyakov, Adnan Abu Ramadan
 ## Problem 1.1
 ### Calculate Frames-per-Second (FPS) (Points 30)
 1. Fork the current repository
-2. Study the new framework-code of 
+2. Study the new framework-code of
     - main.cpp
 3. Check that the code is running correctly: it should show the video stream from the web-camera of your laptop.
 4. Calculate average fps and print it to console every 2 seconds. Compare Debug and Release versions.
 ### Note
 MacOS users may need to launch the application with the administrator rights, to grant access to the web-camera.
+
+### Answer
+The FPS count on both debug and release version was 30 fps.
 
 ## Problem 1.2
 ### Face detection (Points 70)
@@ -20,12 +23,13 @@ MacOS users may need to launch the application with the administrator rights, to
 3. Measure the FPS one more time. How FPS changed after incorporating the face detection into the framework?
 ### Note
 Please do not copy-paste the example code from the OpenCV documentation, but try to understand the example code and implement the solution to the problem by yourself.
+### Answer
+If we set the scale factor to its default (1.0) the frames average to 11. However, if we set the scale factor to (3.0) the frames become more stable at around 30. The result between the varying scale factors is due to the implementation of the face detection algorithm. No significant difference was found between the debug and release versions.
 
 ## Submission
 Please submit the assignment by making a pull request.
 **Important** : Please make sure that
 - No _extra files_ are submitted (except those, which were mentioned in the assignment)
 - The changes were made _only_ in those files where you were asked to write your code
-- The Continiouse Integration system (appVeyor) can build the submitted code
-- The rendered images are also submitted in the folder "renders" 
-
+- The Continious Integration system (appVeyor) can build the submitted code
+- The rendered images are also submitted in the folder "renders"
