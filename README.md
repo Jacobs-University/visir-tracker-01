@@ -2,7 +2,7 @@
 **Dealine**: 26.02.2021
 
 Please put your name here:  
-**Name:** .......
+**Name:** Yonatan Mamo
 ## Problem 1.1
 ### Calculate Frames-per-Second (FPS) (Points 30)
 1. Fork the current repository
@@ -10,6 +10,12 @@ Please put your name here:
     - main.cpp
 3. Check that the code is running correctly: it should show the video stream from the web-camera of your laptop.
 4. Calculate average fps and print it to console every 2 seconds. Compare Debug and Release versions.
+	- average fps for debug and release versions is very similar.
+	- release:<br />
+	![interface](release.PNG) 
+	- debug:<br />
+	![interface](debug.PNG) 
+	
 ### Note
 MacOS users may need to launch the application with the administrator rights, to grant access to the web-camera.
 
@@ -18,6 +24,12 @@ MacOS users may need to launch the application with the administrator rights, to
 1. Read the OpenCV documentation about Viola-Jones face detector: [Cascade Classifier](https://docs.opencv.org/4.2.0/db/d28/tutorial_cascade_classifier.html)  
 2. Implement face detection for the video stream from the web-camera using the ```cv::CascadeClassifier``` class.
 3. Measure the FPS one more time. How FPS changed after incorporating the face detection into the framework?
+	- the FPS is significantly lower after incorporating the face detection. The difference between debug and release version becomes more obvious now. 
+	The debug version FPS drops to 1 and the release version drops to around 4 FPS. The FPS also varies depending on whether a face is being detected or not. Moving the 		camera too fast also seems to affect the FPS. 
+	- release fps:<br />
+	![interface](detectionfps.PNG) 
+	
+	 
 ### Note
 Please do not copy-paste the example code from the OpenCV documentation, but try to understand the example code and implement the solution to the problem by yourself.
 
