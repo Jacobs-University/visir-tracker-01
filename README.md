@@ -25,7 +25,7 @@ MacOS users may need to launch the application with the administrator rights, to
 2. Implement face detection for the video stream from the web-camera using the ```cv::CascadeClassifier``` class.
 3. Measure the FPS one more time. How FPS changed after incorporating the face detection into the framework?
 	- the FPS is significantly lower after incorporating the face detection. The difference between debug and release version becomes more obvious now. 
-	The debug version FPS drops to 1 and the release version drops to around 4 FPS.
+	The debug version FPS drops to 1 and the release version drops to around 4 FPS. The FPS also varies depending on whether a face is being detected or not. Moving the 		camera too fast also seems to affect the FPS. 
 	- release fps:<br />
 	![interface](detectionfps.PNG) 
 	
