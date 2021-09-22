@@ -1,8 +1,7 @@
 # Practical Assignment 1
 **Dealine**: 27.09.2021
-
-Please put your name here:  
-**Name:** .......
+ 
+**Name: Al-ameen Mawji (Worked with Bishoy Roufael)**
 ## Problem 1.1
 ### Calculate Frames-per-Second (FPS) (Points 30)
 1. Fork the current repository
