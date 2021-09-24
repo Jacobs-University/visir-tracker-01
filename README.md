@@ -7,7 +7,8 @@ Please put your name here:
 **Changes** 
 1) Directory "data" with xml cascade file was added.
 2) Line 16 in "CMakeLists.txt" resulted in linker error during make. Line 17 was added as a hotfix.
-3) Solutions to problems 1.1 and 1.2 were added in "main.cpp".
+3) Macos ".DS_Store" files were gitignored.
+4) Solutions to problems 1.1 and 1.2 were added in "main.cpp".
 
 **Solutions**
 
