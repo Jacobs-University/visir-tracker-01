@@ -2,7 +2,16 @@
 **Dealine**: 27.09.2021
 
 Please put your name here:  
-**Name:** .......
+**Name:** Hannes Diethelm
+**Changes** 
+1) Directory "data" with xml cascade file was added.
+2) Line 16 in "CMakeLists.txt" resulted in linker error during make. Line 17 was added as a hotfix.
+3) Solutions to problems 1.1 and 1.2 were added in "main.cpp".
+**Solutions**
+Average FPS measurement were performed over 300 seconds.
+1.1) In RELEASE mode an average of 28.65 FPS were measured. In DEBUG mode an average of 28.75 FPS were measured. In conclusion there is no significant difference between the two modes (for this task lines 8-17 and 36-38 were removed).
+1.2) Including the face detection an average of 14.57 FPS were measured. Therefore, the inclusion of the face detection greatly reduces the FPS (by about 50%).
+
 ## Problem 1.1
 ### Calculate Frames-per-Second (FPS) (Points 30)
 1. Fork the current repository
