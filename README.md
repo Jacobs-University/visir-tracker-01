@@ -2,7 +2,7 @@
 **Dealine**: 26.02.2021
 
 Please put your name here:  
-**Name:** .......
+**Name:** **Kedus Mathewos**
 ## Problem 1.1
 ### Calculate Frames-per-Second (FPS) (Points 30)
 1. Fork the current repository
