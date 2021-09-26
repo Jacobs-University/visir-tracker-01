@@ -2,7 +2,7 @@
 **Dealine**: 27.09.2021
 
 Please put your name here:  
-**Name:** .......
+**Name:** Clichici Calin
 ## Problem 1.1
 ### Calculate Frames-per-Second (FPS) (Points 30)
 1. Fork the current repository
@@ -13,6 +13,10 @@ Please put your name here:
 ### Note
 MacOS users may need to launch the application with the administrator rights, to grant access to the web-camera.
 
+**Solution:**
+The FPS varies from 17 FPS to 25 FPS during runtime, with a total average of 24.54 FPS at the end.
+
+
 ## Problem 1.2
 ### Face detection (Points 70)
 1. Read the OpenCV documentation about Viola-Jones face detector: [Cascade Classifier](https://docs.opencv.org/4.2.0/db/d28/tutorial_cascade_classifier.html)  
@@ -20,6 +24,9 @@ MacOS users may need to launch the application with the administrator rights, to
 3. Measure the FPS one more time. How FPS changed after incorporating the face detection into the framework?
 ### Note
 Please do not copy-paste the example code from the OpenCV documentation, but try to understand the example code and implement the solution to the problem by yourself.
+
+**Solution:**
+The implemented face detection algorithm as explained by the OpenCV documentation resulted in a heavy decline in FPS, now averaging between 1 FPS and 3 FPS during runtime, with a total average of 2.49 FPS at the end. Overall, it is a 90% reduction in performance.
 
 ## Submission
 Please submit the assignment by making a pull request.
