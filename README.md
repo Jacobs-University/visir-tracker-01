@@ -26,7 +26,7 @@ The FPS varies from 17 FPS to 25 FPS during runtime, with a total average of 24.
 Please do not copy-paste the example code from the OpenCV documentation, but try to understand the example code and implement the solution to the problem by yourself.
 
 **Solution:**
-The implemented face detection algorithm as explained by the OpenCV documentation resulted in a heavy decline in FPS, now averaging between 1 FPS and 3 FPS during runtime, with a total average of 2.49 FPS at the end.
+The implemented face detection algorithm as explained by the OpenCV documentation resulted in a heavy decline in FPS, now averaging between 1 FPS and 3 FPS during runtime, with a total average of 2.49 FPS at the end. Overall, it is a 90% reduction in performance.
 
 ## Submission
 Please submit the assignment by making a pull request.
