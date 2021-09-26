@@ -12,7 +12,9 @@ Please put your name here:
 4. Calculate average fps and print it to console every 2 seconds. Compare Debug and Release versions.
 ### Note
 MacOS users may need to launch the application with the administrator rights, to grant access to the web-camera.
-
+    
+    The average FPS is around 17-24 FPS as can be seen in the following image:
+    ![Problem 1.1](/desktop/HCI)
 ## Problem 1.2
 ### Face detection (Points 70)
 1. Read the OpenCV documentation about Viola-Jones face detector: [Cascade Classifier](https://docs.opencv.org/4.2.0/db/d28/tutorial_cascade_classifier.html)  
