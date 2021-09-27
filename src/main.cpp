@@ -1,8 +1,16 @@
+#include "opencv2/objdetect.hpp"
+#include "opencv2/highgui.hpp"
+#include "opencv2/imgproc.hpp"
+#include "opencv2/videoio.hpp"
+#include <iostream>
+#include <chrono>
+#include <thread>
+#include <atomic>
 
 using namespace cv;
 using namespace std;
 
-void setInterval(int seconds, atomic<int> &frames, atomic<bool> &on){
+void setInterval2(int seconds, atomic<int> &frames, atomic<bool> &on){
     int fps = 0;
     while (on){
         this_thread::sleep_for(chrono::milliseconds(seconds*1000));
@@ -64,7 +72,7 @@ int main(){
         return 1;
     };
 
-    thread timer(setInterval, 2, ref(frames), ref(on));
+    thread timer(setInterval2, 2, ref(frames), ref(on));
 
     while (camera.read(frame)){
         if (frame.empty()){

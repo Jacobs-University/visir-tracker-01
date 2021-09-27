@@ -1,7 +1,6 @@
 #include "types.h"
 #include <iostream>
 #include <chrono>
-#include <thread>
 #include <atomic>
 
 void setInterval(int seconds, std::atomic<int> &frames, std::atomic<bool> &on){
@@ -23,7 +22,7 @@ int main() {
 		printf("Can't find a camera\n");
 		return 1;
 	};
-	
+
 	std::thread timer(setInterval, 2, std::ref(frames), std::ref(on));
 
 	// Main loop
